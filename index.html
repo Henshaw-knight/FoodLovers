@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Lovers</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./script.js" defer></script>
+</head>
+
+<body class="poppins">
+  <section
+    class="w-[100%] h-[100vh] before:content-[''] before:absolute before:left-0 before:top-0 before:w-[100%] before:h-[100%] before:bg-black before:opacity-70 before:-z-[1] relative overflow-hidden">
+    <div class="home-background absolute left-0 right-0 w-[100%] h-[100%] -z-[2]"></div>
+    <nav
+      class="nav-bar flex justify-between items-center text-white bg-transparent w-[100%] fixed z-10 px-16 pb-3 before:content-[''] before:absolute before:left-0 before:top-0 before:w-[100%] before:h-[100%] before:bg-gray-800 before:-z-[1]">
+      <a href="#home">
+        <div class="w-60 h-[50px] flex justify-start items-center gap-1">
+          <svg class="icon h-[35px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M240 144A96 96 0 1 0 48 144a96 96 0 1 0 192 0zm44.4 32C269.9 240.1 212.5 288 144 288C64.5 288 0 223.5 0 144S64.5 0 144 0c68.5 0 125.9 47.9 140.4 112l71.8 0c8.8-9.8 21.6-16 35.8-16l104 0c26.5 0 48 21.5 48 48s-21.5 48-48 48l-104 0c-14.2 0-27-6.2-35.8-16l-71.8 0zM144 80a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM400 240c13.3 0 24 10.7 24 24l0 8 96 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-240 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l96 0 0-8c0-13.3 10.7-24 24-24zM288 464l0-112 224 0 0 112c0 26.5-21.5 48-48 48l-128 0c-26.5 0-48-21.5-48-48zM48 320l80 0 16 0 32 0c26.5 0 48 21.5 48 48s-21.5 48-48 48l-16 0c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-80c0-8.8 7.2-16 16-16zm128 64c8.8 0 16-7.2 16-16s-7.2-16-16-16l-16 0 0 32 16 0zM24 464l176 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L24 512c-13.3 0-24-10.7-24-24s10.7-24 24-24z" />
+          </svg>
+          <p class="text-3xl courgette align-middle text-white pt-2">Food Lovers</p>
+        </div>
+      </a>
+      <ul class="flex justify-between w-1/2 text-sm font-bold items-center pt-3 mr-3">
+        <li class="hover:text-orange-300 transition duration-300 ease"><a href="#home">Home</a></li>
+        <li class="hover:text-orange-300 transition duration-300 ease"><a href="#about">About</a></li>
+        <li class="hover:text-orange-300 transition duration-300 ease"><a href="#reservation">Reservation</a></li>
+        <li class="hover:text-orange-300 transition duration-300 ease"><a href="#recipes">Recipes</a></li>
+        <li class="hover:text-orange-300 transition duration-300 ease"><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="pt-3"><a href="#menu"
+          class="text-sm font-bold px-5 py-1.5 border-2 border-white rounded-full bg-transparent text-white hover:bg-[#eaa023] hover:border-orange-400 transition-all duration-300 ease">Menu</a>
+      </div>
+    </nav>
+    <!-- <div class="container max-w-[86%] m-auto">
+      
+
+    </div> -->
+    <div class="watchword text-white w-[700px] h-[350px] m-auto mt-[30vh] p-4 text-center">
+      <h1 class="text-5xl pacifico">Food Lovers Restaurant</h1>
+      <p class="mt-5 font-light">Craving something special? Indulge in a culinary journey like no other, where every
+        bite is crafted with passion and served with love. Come hungry, leave happy!</p>
+      <div class="home-links flex w-[50%] m-auto justify-around mt-10">
+        <a href="#menu"
+          class="px-5 py-3 border-2 border-orange-300 rounded-full bg-transparent font-medium text-green-300 hover:bg-[#eaa023] hover:text-white hover:border-orange-400 transition-all duration-300 ease">Our
+          Menu</a>
+        <a href="#reservation"
+          class="px-5 py-3 border-2 border-orange-300 rounded-full bg-transparent font-medium text-green-300 hover:bg-[#eaa023] hover:text-white hover:border-orange-400 transition-all duration-300 ease">Reservation</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-900 pt-20 px-16" id="about">
+    <h2 class="text-3xl font-bold text-white text-center">About us</h2>
+    <div>
+      <div class="about-us w-[100%] flex  justify-between mt-10">
+        <div class="image-holder w-[350px] h-[500px] relative">
+          <div class="history glass w-[150px] absolute top-52 -right-12 py-5 text-white font-bold text-center bounce-animation">Since
+            2000
+          </div>
+          <img src="./Food stand.jpg" alt=""
+            class="w-full h-full object-cover rounded-tl-[43%] rounded-tr-[10%] rounded-bl-[38%] rounded-br-[45%]">
+        </div>
+
+        <div class="our-story w-[65%] pt-5">
+          <h3 class="custom-orange text-3xl font-extrabold dancing-script">Our Story</h3>
+          <p class="text-white text-sm leading-6 text-justify mt-3">
+            Welcome to Food Lovers Restaurant, where flavors come to life! Our journey began with a passion for creating
+            memorable dining experiences. Rooted in a love for authentic cuisine, we set out to blend traditional
+            recipes
+            with contemporary flair, offering a menu that reflects both time-honored tastes and innovative dishes. </p>
+          <p class="text-white text-sm leading-6 text-justify mt-3">From the moment we opened our doors, our goal has
+            been
+            to bring people together through food. Every dish is crafted with fresh, locally sourced ingredients,
+            prepared
+            with care by our talented chefs. Whether it is a casual meal with friends, a special celebration, or a cozy
+            family dinner, we strive to make every moment at Food Lovers Restaurant special.</p>
+
+          <p class="text-white text-sm leading-6 text-justify mt-3">At the heart of everything we do is our dedication
+            to
+            creating a warm, welcoming atmosphere, where guests feel like part of the family. We invite you to join us
+            and
+            become a part of our story—where great food, good company, and unforgettable moments come together.</p>
+          </p>
+
+          <div class="mt-10">
+
+            <a href="#contact"
+              class="px-5 py-3 border-2 border-orange-300 rounded-full bg-transparent font-medium text-white hover:bg-[#eaa023] hover:text-white hover:border-orange-400 transition-all duration-300 ease">Contact
+              Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pb-10">
+      <h3 class="custom-orange text-3xl font-extrabold dancing-script text-center">Our Executives</h3>
+      <div class="flex w-[100%] justify-between items-center flex-wrap relative mt-10">
+        <div class="card text-white w-[25%] h-[350px] b-shadow overflow-hidden flex justify-center items-center">
+          <div class="content p-5 text-center content-transition">
+            <h1 class="absolute top-[-50px] right-[30px] text-9xl h2-color font-bold">01</h1>
+            <img src="./Henshaw Passport.jpg" alt="" width="200px" height="200px">
+            <p class="font-bold mt-2">HENSHAW JOSEPH</p>
+            <p class="custom-orange font-bold text-sm">CEO</p>
+          </div>
+        </div>
+
+        <div class="card text-white w-[25%] h-[350px] b-shadow overflow-hidden flex justify-center items-center">
+          <div class="content p-5 text-center content-transition">
+            <h1 class="absolute top-[-50px] right-[30px] text-9xl h2-color font-bold">02</h1>
+            <img src="./Henshaw Passport.jpg" alt="" width="200px" height="200px">
+            <p class="font-bold mt-2">IDY CHRISTIAN</p>
+            <p class="custom-orange font-medium text-sm">Director of Catering</p>
+          </div>
+        </div>
+
+        <div class="card text-white w-[25%] h-[350px] b-shadow overflow-hidden flex justify-center items-center">
+          <div class="content p-5 text-center content-transition">
+            <h1 class="absolute top-[-50px] right-[30px] text-9xl h2-color font-bold">03</h1>
+            <img src="" alt=""><img src="./Henshaw Passport.jpg" alt="" width="200px" height="200px">
+            <p class="font-bold mt-2">EMMANUEL FESTUS</p>
+            <p class="custom-orange font-medium text-sm">Director of Business</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-[100%] h-[100px] bg-yellow-200 flex justify-between items-center mt-10 px-4 b-shadow rounded-sm">
+      <div class="h-full flex w-[30%] justify-between">
+        <svg class="h-full w-[50px] cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+        <div class="w-[80%] flex flex-col justify-center">
+          <h3 class="font-bold">Easy To Order</h3>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos?</p>
+        </div>
+        
+      </div>
+      <div class="h-full flex w-[30%] justify-between bg-yellow-200">
+        <svg class="h-full w-[50px] cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M280 32c-13.3 0-24 10.7-24 24s10.7 24 24 24l57.7 0 16.4 30.3L256 192l-45.3-45.3c-12-12-28.3-18.7-45.3-18.7L64 128c-17.7 0-32 14.3-32 32l0 32 96 0c88.4 0 160 71.6 160 160c0 11-1.1 21.7-3.2 32l70.4 0c-2.1-10.3-3.2-21-3.2-32c0-52.2 25-98.6 63.7-127.8l15.4 28.6C402.4 276.3 384 312 384 352c0 70.7 57.3 128 128 128s128-57.3 128-128s-57.3-128-128-128c-13.5 0-26.5 2.1-38.7 6L418.2 128l61.8 0c17.7 0 32-14.3 32-32l0-32c0-17.7-14.3-32-32-32l-20.4 0c-7.5 0-14.7 2.6-20.5 7.4L391.7 78.9l-14-26c-7-12.9-20.5-21-35.2-21L280 32zM462.7 311.2l28.2 52.2c6.3 11.7 20.9 16 32.5 9.7s16-20.9 9.7-32.5l-28.2-52.2c2.3-.3 4.7-.4 7.1-.4c35.3 0 64 28.7 64 64s-28.7 64-64 64s-64-28.7-64-64c0-15.5 5.5-29.7 14.7-40.8zM187.3 376c-9.5 23.5-32.5 40-59.3 40c-35.3 0-64-28.7-64-64s28.7-64 64-64c26.9 0 49.9 16.5 59.3 40l66.4 0C242.5 268.8 190.5 224 128 224C57.3 224 0 281.3 0 352s57.3 128 128 128c62.5 0 114.5-44.8 125.8-104l-66.4 0zM128 384a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+        <!-- <svg class="h-full w-[50px] cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg> -->
+        <div class="w-[80%] flex flex-col justify-center">
+          <h3 class="font-bold">Fastest Delivery</h3>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos?</p>
+        </div>
+        
+      </div>
+      <div class="h-full flex w-[30%] justify-between bg-yellow-200">
+        <svg class="h-full w-[50px] cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M4.1 38.2C1.4 34.2 0 29.4 0 24.6C0 11 11 0 24.6 0L133.9 0c11.2 0 21.7 5.9 27.4 15.5l68.5 114.1c-48.2 6.1-91.3 28.6-123.4 61.9L4.1 38.2zm503.7 0L405.6 191.5c-32.1-33.3-75.2-55.8-123.4-61.9L350.7 15.5C356.5 5.9 366.9 0 378.1 0L487.4 0C501 0 512 11 512 24.6c0 4.8-1.4 9.6-4.1 13.6zM80 336a176 176 0 1 1 352 0A176 176 0 1 1 80 336zm184.4-94.9c-3.4-7-13.3-7-16.8 0l-22.4 45.4c-1.4 2.8-4 4.7-7 5.1L168 298.9c-7.7 1.1-10.7 10.5-5.2 16l36.3 35.4c2.2 2.2 3.2 5.2 2.7 8.3l-8.6 49.9c-1.3 7.6 6.7 13.5 13.6 9.9l44.8-23.6c2.7-1.4 6-1.4 8.7 0l44.8 23.6c6.9 3.6 14.9-2.2 13.6-9.9l-8.6-49.9c-.5-3 .5-6.1 2.7-8.3l36.3-35.4c5.6-5.4 2.5-14.8-5.2-16l-50.1-7.3c-3-.4-5.7-2.4-7-5.1l-22.4-45.4z"/></svg>
+        <!-- <svg class="h-full w-[50px] cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg> -->
+        <div class="w-[80%] flex flex-col justify-center">
+          <h3 class="font-bold">Best Quality</h3>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos?</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-900 pt-20 px-16 w-[100%]" id="menu">
+    <h2 class="text-3xl font-bold text-white text-center">Our Menu</h2>
+    <div class="menu-tabs text-white w-[70%] m-auto mt-5 text-center font-medium text-lg">
+      <button type="button" class="menu-tab-item active mx-10 my-5" data-target="#lunch">
+        Lunch
+      </button>
+      <button type="button" class="menu-tab-item mx-10 my-5" data-target="#dinner">
+        Dinner
+      </button>
+      <button type="button" class="menu-tab-item mx-10 my-5" data-target="#drinks">
+        Desserts
+      </button>
+      <button type="button" class="menu-tab-item mx-10 my-5" data-target="#desserts">
+        Drinks
+      </button>
+    </div>
+
+    <div class="menu-tab-content custom-orange flex flex-wrap justify-between" id="lunch">
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Lunch item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Lunch item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Lunch item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Lunch item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Lunch item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Lunch item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-right">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Lunch item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-left">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Lunch item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
+      </div>
+    </div>
+
+    <div class="menu-tab-content custom-orange flex-wrap justify-between hidden" id="dinner">
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Dinner item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Dinner item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Dinner item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Dinner item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Dinner item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Dinner item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-right">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Dinner item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-left">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Dinner item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
+      </div>
+    </div>
+
+    <div class="menu-tab-content custom-orange flex-wrap justify-between hidden" id="desserts">
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Dessert item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Dessert item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Dessert item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Dessert item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-right">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Dessert item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-left">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Dessert item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
+      </div>
+    </div>
+
+    <div class="menu-tab-content custom-orange flex-wrap justify-between hidden" id="drinks">
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Drink item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Drink item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-right">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Drink item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
+      </div>
+      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-left">
+        <div class="menu-item-title flex gap-4 items-center">
+          <img src="./1.jpg" alt="menu item thumbnail" />
+          <h3>Drink item</h3>
+        </div>
+        <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-900 pt-20 px-16 w-[100%]" id="Chefs">
+    <h2 class="text-3xl font-bold text-white text-center">Our World-class Chefs</h2>
+
+  </section>
+</body>
+
+</html>
