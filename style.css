@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
+:root {
+  scroll-behavior: smooth;
+}
+
 .poppins {
   font-family: "Poppins", sans-serif;
 }
@@ -86,6 +90,10 @@
   color: rgb(250, 170, 21);
 }
 
+.custom-background-orange {
+  color: rgb(250, 170, 21);
+}
+
 .icon {
   /* fill: orange; */
   fill: rgb(250, 170, 21);
@@ -154,4 +162,37 @@ nav.curtain::before {
 .active {
   color: rgb(250, 170, 21);
   text-decoration: underline;
+}
+
+.chef {
+  transition: transform 0.3s ease;
+}
+
+.chef:hover {
+  transform: skew(2deg);
+} 
+
+.chef-details{
+  transform: translateY(0%);
+  transition: all 0.3s ease;
+}
+
+.chef:hover .chef-details {
+  transform: translateY(-35px);
+  background-color: rgb(250, 170, 21);
+}
+
+.team-item-info h3 {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0 0 10px;
+}
+
+.team-item-info p {
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.team-item:hover .team-item-info p {
+  color: var(--white);
 }
