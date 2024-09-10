@@ -1,12 +1,12 @@
 window.addEventListener("load", function(){
     // page loader
-    // setTimeout(function(){
-    //     document.querySelector(".page-loader").classList.add("fade-out");
-    // }, 1000)
+    setTimeout(function(){
+        document.querySelector(".page-loader").classList.add("fade-out");
+    }, 1000)
     
-    // setTimeout(function(){
-    //     document.querySelector(".page-loader").style.display="none";
-    // }, 5000);
+    setTimeout(function(){
+        document.querySelector(".page-loader").style.display="none";
+    }, 5000);
     // animation on scroll
     AOS.init();
 })
