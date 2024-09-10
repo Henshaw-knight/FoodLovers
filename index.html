@@ -13,9 +13,9 @@
   <script src="./script.js" defer></script>
 </head>
 
-<body class="poppins">
+<body class="poppins min-w-[350px]">
   <section
-    class="w-[100%] h-[100vh] before:content-[''] before:absolute before:left-0 before:top-0 before:w-[100%] before:h-[100%] before:bg-black before:opacity-70 before:-z-[1] relative overflow-hidden">
+    class="w-[100%] h-[100vh] before:content-[''] before:absolute before:left-0 before:top-0 before:w-[100%] before:h-[100%] before:bg-black before:opacity-70 before:-z-[1] relative overflow-hidden" id="home">
     <div class="home-background absolute left-0 right-0 w-[100%] h-[100%] -z-[2]"></div>
     <nav
       class="nav-bar flex justify-between items-center text-white bg-transparent w-[100%] fixed z-10 px-16 pb-3 before:content-[''] before:absolute before:left-0 before:top-0 before:w-[100%] before:h-[100%] before:bg-gray-800 before:-z-[1]">
@@ -29,7 +29,17 @@
           <p class="text-3xl courgette align-middle text-white pt-2">Food Lovers</p>
         </div>
       </a>
-      <ul class="flex justify-between w-1/2 text-sm font-bold items-center pt-3 mr-3">
+      <button class="block pt-4 nav-toggler lg:hidden"><i class="fa-solid fa-bars"></i></button>
+      <nav class="bar-nav">
+        <ul>
+          <li class="nav-item"><a href="#home">Home</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#our-menu">Our menu</a></li>
+          <li class="nav-item"><a href="#chefs">Chefs</a></li>
+          <li class="nav-item"><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <ul class="justify-between w-1/2 text-sm font-bold items-center pt-3 mr-3 hidden lg:flex">
         <li class="hover:text-orange-300 transition duration-300 ease"><a href="#home">Home</a></li>
         <li class="hover:text-orange-300 transition duration-300 ease"><a href="#about">About</a></li>
         <li class="hover:text-orange-300 transition duration-300 ease"><a href="#reservation">Reservation</a></li>
@@ -37,7 +47,7 @@
         <li class="hover:text-orange-300 transition duration-300 ease"><a href="#contact">Contact</a></li>
       </ul>
 
-      <div class="pt-3"><a href="#menu"
+      <div class="pt-3 hidden lg:block"><a href="#menu"
           class="text-sm font-bold px-5 py-1.5 border-2 border-white rounded-full bg-transparent text-white hover:bg-[#eaa023] hover:border-orange-400 transition-all duration-300 ease">Menu</a>
       </div>
     </nav>
@@ -45,16 +55,16 @@
       
 
     </div> -->
-    <div class="watchword text-white w-[700px] h-[350px] m-auto mt-[30vh] p-4 text-center" data-aos="fade-up" data-aos-duration="1200">
-      <h1 class="text-5xl pacifico">Food Lovers Restaurant</h1>
-      <p class="mt-5 font-light">Craving something special? Indulge in a culinary journey like no other, where every
+    <div class="watchword text-white max-w-[600px] lg:max-w-[700px] h-[350px] m-auto mt-[30vh] p-4 text-center" data-aos="fade-up" data-aos-duration="1200">
+      <h1 class="text-4xl lg:text-5xl pacifico">Food Lovers Restaurant</h1>
+      <p class="mt-5 font-light px-3 lg:px-0">Craving something special? Indulge in a culinary journey like no other, where every
         bite is crafted with passion and served with love. Come hungry, leave happy!</p>
-      <div class="home-links flex w-[50%] m-auto justify-around mt-10">
+      <div class="home-links flex flex-col md:flex-row w-[50%] m-auto justify-around mt-10">
         <a href="#menu"
           class="px-5 py-3 border-2 border-orange-300 rounded-full bg-transparent font-medium text-green-300 hover:bg-[#eaa023] hover:text-white hover:border-orange-400 transition-all duration-300 ease">Our
           Menu</a>
         <a href="#reservation"
-          class="px-5 py-3 border-2 border-orange-300 rounded-full bg-transparent font-medium text-green-300 hover:bg-[#eaa023] hover:text-white hover:border-orange-400 transition-all duration-300 ease">Reservation</a>
+          class="px-5 py-3 border-2 border-orange-300 rounded-full bg-transparent font-medium text-green-300 hover:bg-[#eaa023] hover:text-white hover:border-orange-400 transition-all duration-300 ease mt-2 md:mt-0">Reservation</a>
       </div>
     </div>
   </section>
@@ -62,7 +72,7 @@
   <section class="bg-gray-900 pt-20 px-16 overflow-hidden" id="about">
     <h2 class="text-3xl font-bold text-white text-center" data-aos="fade-up">About us</h2>
     <div>
-      <div class="about-us w-[100%] flex  justify-between mt-10">
+      <div class="about-us w-[100%] flex flex-col lg:flex-row justify-between mt-10">
         <div class="image-holder w-[350px] h-[500px] relative" data-aos="fade-right">
           <div class="history glass w-[150px] absolute top-52 -right-12 py-5 text-white font-bold text-center bounce-animation">Since
             2000
@@ -71,7 +81,7 @@
             class="w-full h-full object-cover rounded-tl-[43%] rounded-tr-[10%] rounded-bl-[38%] rounded-br-[45%]">
         </div>
 
-        <div class="our-story w-[65%] pt-5" data-aos="fade-left">
+        <div class="our-story w-[100%] lg:w-[65%] pt-5" data-aos="fade-left">
           <h3 class="custom-orange text-3xl font-extrabold dancing-script">Our Story</h3>
           <p class="text-white text-sm leading-6 text-justify mt-3">
             Welcome to Food Lovers Restaurant, where flavors come to life! Our journey began with a passion for creating
@@ -102,10 +112,10 @@
       </div>
     </div>
 
-    <div class="pb-10">
+    <div class="pb-10 pt-20 lg:pt-3">
       <h3 class="custom-orange text-3xl font-extrabold dancing-script text-center" data-aos="fade-up">Our Executives</h3>
-      <div class="flex w-[100%] justify-between items-center flex-wrap relative mt-10">
-        <div class="card text-white w-[25%] h-[350px] b-shadow overflow-hidden flex justify-center items-center" data-aos="zoom-in">
+      <div class="flex flex-col lg:flex-row w-[100%] justify-between items-center flex-wrap relative mt-10">
+        <div class="card text-white w-[65%] md:w-[45%] lg:w-[25%] h-[350px] b-shadow overflow-hidden flex justify-center items-center mb-8 lg:mb-0" data-aos="zoom-in">
           <div class="content p-5 text-center content-transition">
             <h1 class="absolute top-[-50px] right-[30px] text-9xl h2-color font-bold">01</h1>
             <img src="./Henshaw Passport.jpg" alt="" width="200px" height="200px">
@@ -114,7 +124,7 @@
           </div>
         </div>
 
-        <div class="card text-white w-[25%] h-[350px] b-shadow overflow-hidden flex justify-center items-center" data-aos="zoom-in">
+        <div class="card text-white w-[65%] md:w-[45%] lg:w-[25%] h-[350px] b-shadow overflow-hidden flex justify-center items-center mb-8 lg:mb-0" data-aos="zoom-in">
           <div class="content p-5 text-center content-transition">
             <h1 class="absolute top-[-50px] right-[30px] text-9xl h2-color font-bold">02</h1>
             <img src="./Idy2-removebg-preview.png" alt="" width="200px" height="200px">
@@ -123,7 +133,7 @@
           </div>
         </div>
 
-        <div class="card text-white w-[25%] h-[350px] b-shadow overflow-hidden flex justify-center items-center" data-aos="zoom-in">
+        <div class="card text-white w-[65%] md:w-[45%] lg:w-[25%] h-[350px] b-shadow overflow-hidden flex justify-center items-center mb-8 lg:mb-0" data-aos="zoom-in">
           <div class="content p-5 text-center content-transition">
             <h1 class="absolute top-[-50px] right-[30px] text-9xl h2-color font-bold">03</h1>
             <img src="./Emmanuel_Festus-removebg-preview.png" alt="" width="200px" height="200px">
@@ -134,8 +144,8 @@
       </div>
     </div>
 
-    <div class="w-[100%] h-[100px] bg-yellow-200 flex justify-between items-center mt-10 px-4 b-shadow rounded-sm" data-aos="fade-up">
-      <div class="h-full flex w-[30%] justify-between">
+    <div class="w-[100%] min-w-[350px] py-5 bg-yellow-200 flex justify-between items-center mt-10 px-4 b-shadow rounded-sm" data-aos="fade-up">
+      <div class="h-full flex flex-col lg:flex-row w-[30%] justify-between">
         <svg class="h-full w-[50px] cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
         <div class="w-[80%] flex flex-col justify-center">
           <h3 class="font-bold">Easy To Order</h3>
@@ -143,7 +153,7 @@
         </div>
         
       </div>
-      <div class="h-full flex w-[30%] justify-between bg-yellow-200">
+      <div class="h-full flex flex-col lg:flex-row w-[30%] justify-between bg-yellow-200">
         <svg class="h-full w-[50px] cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M280 32c-13.3 0-24 10.7-24 24s10.7 24 24 24l57.7 0 16.4 30.3L256 192l-45.3-45.3c-12-12-28.3-18.7-45.3-18.7L64 128c-17.7 0-32 14.3-32 32l0 32 96 0c88.4 0 160 71.6 160 160c0 11-1.1 21.7-3.2 32l70.4 0c-2.1-10.3-3.2-21-3.2-32c0-52.2 25-98.6 63.7-127.8l15.4 28.6C402.4 276.3 384 312 384 352c0 70.7 57.3 128 128 128s128-57.3 128-128s-57.3-128-128-128c-13.5 0-26.5 2.1-38.7 6L418.2 128l61.8 0c17.7 0 32-14.3 32-32l0-32c0-17.7-14.3-32-32-32l-20.4 0c-7.5 0-14.7 2.6-20.5 7.4L391.7 78.9l-14-26c-7-12.9-20.5-21-35.2-21L280 32zM462.7 311.2l28.2 52.2c6.3 11.7 20.9 16 32.5 9.7s16-20.9 9.7-32.5l-28.2-52.2c2.3-.3 4.7-.4 7.1-.4c35.3 0 64 28.7 64 64s-28.7 64-64 64s-64-28.7-64-64c0-15.5 5.5-29.7 14.7-40.8zM187.3 376c-9.5 23.5-32.5 40-59.3 40c-35.3 0-64-28.7-64-64s28.7-64 64-64c26.9 0 49.9 16.5 59.3 40l66.4 0C242.5 268.8 190.5 224 128 224C57.3 224 0 281.3 0 352s57.3 128 128 128c62.5 0 114.5-44.8 125.8-104l-66.4 0zM128 384a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
         <!-- <svg class="h-full w-[50px] cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg> -->
         <div class="w-[80%] flex flex-col justify-center">
@@ -152,7 +162,7 @@
         </div>
         
       </div>
-      <div class="h-full flex w-[30%] justify-between bg-yellow-200">
+      <div class="h-full flex flex-col lg:flex-row w-[30%] justify-between bg-yellow-200">
         <svg class="h-full w-[50px] cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M4.1 38.2C1.4 34.2 0 29.4 0 24.6C0 11 11 0 24.6 0L133.9 0c11.2 0 21.7 5.9 27.4 15.5l68.5 114.1c-48.2 6.1-91.3 28.6-123.4 61.9L4.1 38.2zm503.7 0L405.6 191.5c-32.1-33.3-75.2-55.8-123.4-61.9L350.7 15.5C356.5 5.9 366.9 0 378.1 0L487.4 0C501 0 512 11 512 24.6c0 4.8-1.4 9.6-4.1 13.6zM80 336a176 176 0 1 1 352 0A176 176 0 1 1 80 336zm184.4-94.9c-3.4-7-13.3-7-16.8 0l-22.4 45.4c-1.4 2.8-4 4.7-7 5.1L168 298.9c-7.7 1.1-10.7 10.5-5.2 16l36.3 35.4c2.2 2.2 3.2 5.2 2.7 8.3l-8.6 49.9c-1.3 7.6 6.7 13.5 13.6 9.9l44.8-23.6c2.7-1.4 6-1.4 8.7 0l44.8 23.6c6.9 3.6 14.9-2.2 13.6-9.9l-8.6-49.9c-.5-3 .5-6.1 2.7-8.3l36.3-35.4c5.6-5.4 2.5-14.8-5.2-16l-50.1-7.3c-3-.4-5.7-2.4-7-5.1l-22.4-45.4z"/></svg>
         <!-- <svg class="h-full w-[50px] cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg> -->
         <div class="w-[80%] flex flex-col justify-center">
@@ -164,74 +174,74 @@
     </div>
   </section>
 
-  <section class="bg-gray-900 pt-20 px-16 w-[100%] overflow-hidden" id="menu">
+  <section class="bg-gray-900 pt-20 px-16 w-[100%] min-w-[350px] overflow-hidden" id="menu">
     <h2 class="text-3xl font-bold text-white text-center" data-aos="fade-up">Our Menu</h2>
-    <div class="menu-tabs text-white w-[70%] m-auto mt-5 text-center font-medium text-lg">
+    <div class="menu-tabs text-white w-[100%] lg:w-[70%] m-auto mt-5 text-center font-medium text-lg flex lg:block">
       <button type="button" class="menu-tab-item active mx-10 my-5" data-target="#lunch">
         Lunch
       </button>
-      <button type="button" class="menu-tab-item mx-10 my-5" data-target="#dinner">
+      <button type="button" class="menu-tab-item mx-5 lg:mx-10 my-5" data-target="#dinner">
         Dinner
       </button>
-      <button type="button" class="menu-tab-item mx-10 my-5" data-target="#desserts">
+      <button type="button" class="menu-tab-item mx-5 lg:mx-10 my-5" data-target="#desserts">
         Desserts
       </button>
-      <button type="button" class="menu-tab-item mx-10 my-5" data-target="#drinks">
+      <button type="button" class="menu-tab-item mx-5 lg:mx-10 my-5" data-target="#drinks">
         Drinks
       </button>
     </div>
 
-    <div class="menu-tab-content custom-orange flex flex-wrap justify-between" id="lunch">
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+    <div class="menu-tab-content custom-orange flex flex-col lg:flex-row flex-wrap justify-between" id="lunch">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Lunch item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Lunch item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Lunch item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Lunch item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Lunch item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Lunch item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-right">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5" data-aos="fade-up-right">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Lunch item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2000.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-left">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5" data-aos="fade-up-left">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Lunch item</h3>
@@ -241,56 +251,56 @@
     </div>
 
     <div class="menu-tab-content custom-orange flex-wrap justify-between hidden" id="dinner">
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Dinner item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Dinner item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Dinner item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Dinner item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Dinner item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Dinner item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-right">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5" data-aos="fade-up-right">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Dinner item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>2500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-left">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5" data-aos="fade-up-left">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Dinner item</h3>
@@ -300,42 +310,42 @@
     </div>
 
     <div class="menu-tab-content custom-orange flex-wrap justify-between hidden" id="desserts">
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Dessert item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Dessert item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Dessert item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Dessert item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-right">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5" data-aos="fade-up-right">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Dessert item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-left">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5" data-aos="fade-up-left">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Dessert item</h3>
@@ -345,28 +355,28 @@
     </div>
 
     <div class="menu-tab-content custom-orange flex-wrap justify-between hidden" id="drinks">
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-right">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Drink item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5 border-b border-dotted border-slate-600" data-aos="fade-up-left">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Drink item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-right">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5" data-aos="fade-up-right">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Drink item</h3>
         </div>
         <div class="menu-item-price text-white"><i class="fa-solid fa-naira-sign"></i>1500.00</div>
       </div>
-      <div class="menu-item w-[48%] flex justify-between items-center py-5" data-aos="fade-up-left">
+      <div class="menu-item w-[100%] lg:w-[48%] flex justify-between items-center py-5" data-aos="fade-up-left">
         <div class="menu-item-title flex gap-4 items-center">
           <img src="./1.jpg" alt="menu item thumbnail" />
           <h3>Drink item</h3>
@@ -378,19 +388,19 @@
 
   <section class="bg-gray-900 pt-20 px-16 w-[100%] overflow-hidden" id="reservation">
     <h2 class="text-3xl font-bold text-white text-left" data-aos="fade-up">Book a Table</h2>
-    <div class="w-[100%] h-[700px] mt-5 flex">
-      <div class="w-[50%] picture-gallery" data-aos="fade-up-left">
-        <div class="flex gap-3">
-          <img class="w-[297px]" src="./pexels-pavel-danilyuk-8775200.jpg" alt="">
+    <div class="w-[100%] lg:h-[700px] mt-5 flex flex-col lg:flex-row">
+      <div class="w-[100%] lg:w-[50%] picture-gallery" data-aos="fade-up-left">
+        <div class="flex gap-4 lg:gap-3">
+          <img class="w-[48%] lg:w-[297px]" src="./pexels-pavel-danilyuk-8775200.jpg" alt="">
           <!-- <img class="w-[350px]" src="./pexels-chanwalrus-958545 (1).jpg" alt=""> -->
-          <img class="w-[297px]" src="./pexels-pixabay-262978.jpg" alt="">
+          <img class="w-[48%] lg:w-[297px]" src="./pexels-pixabay-262978.jpg" alt="">
         </div>
         <div class="mt-3 w-[100%]">
           <img class="h-[350px] w-[100%]" src="./pexels-pixabay-262047.jpg" alt="">
         </div>
       </div>
 
-      <form action="" class="text-white w-[50%]" id="form" data-aos="fade-up-right">
+      <form action="" class="text-white w-[100%] lg:w-[50%] pb-10 lg:pb-0" id="form" data-aos="fade-up-right">
         <div class="flex justify-evenly">
         <label for=""> Name <br>
           <input type="text" class="px-3 py-3 text-black w-[200px]" id="username" required>
@@ -439,8 +449,8 @@
 
   <section class="bg-gray-900 pt-8 px-16 w-[100%] pb-32 overflow-hidden" id="Chefs">
     <h2 class="text-3xl font-bold text-white text-center" data-aos="fade-up">Our World-class Chefs</h2>
-    <div class="w-[100%] flex justify-between mt-12 -z-1">
-      <div class="bg-purple-300 rounded-md w-[30%] text-center relative chef" data-aos="flip-left" data-aos-duration="1000">
+    <div class="w-[100%] flex flex-col gap-16 lg:flex-row lg:gap-0 justify-between mt-12 -z-1">
+      <div class="bg-purple-300 rounded-md w-[100%] lg:w-[30%] text-center relative chef" data-aos="flip-left" data-aos-duration="1000">
         <img src="./Caterer2.png" alt="" class="h-[400px]">
         <div class="chef-details text-white h-[75px] w-[250px] bg-gray-800 absolute -bottom-7 left-[15%] right-[15%] rounded-md flex flex-col justify-center">
           <p class="font-bold mb-2">Elizabeth David</p>
@@ -449,7 +459,7 @@
         
       </div>
       
-      <div class="bg-yellow-200 rounded-md w-[30%] text-center relative pl-10 chef" data-aos="flip-left" data-aos-duration="1000">
+      <div class="bg-yellow-200 rounded-md w-[100%] lg:w-[30%] text-center relative pl-10 chef" data-aos="flip-left" data-aos-duration="1000">
         <img src="./Caterer1.png" alt="" class="h-[400px]">
         <div class="chef-details text-white h-[75px] w-[250px] bg-gray-800 absolute -bottom-7 left-[15%] right-[15%] rounded-md flex flex-col justify-center">
           <p class="font-bold mb-2">Becky Taiwo</p>
@@ -458,7 +468,7 @@
         
       </div>
 
-      <div class="bg-green-300 rounded-md w-[30%] text-center relative pl-10 chef" data-aos="flip-left" data-aos-duration="1000">
+      <div class="bg-green-300 rounded-md w-[100%] lg:w-[30%] text-center relative pl-10 chef" data-aos="flip-left" data-aos-duration="1000">
         <img src="./Caterer3.png" alt="" class="h-[400px]">
         <div class="chef-details text-white h-[75px] w-[250px] bg-gray-800 absolute -bottom-7 left-[15%] right-[15%] rounded-md flex flex-col justify-center">
           <p class="font-bold mb-2">Samuel Udoka</p>
@@ -468,9 +478,9 @@
     </div>
   </section>
 
-  <footer class="footer" id="footer">
+  <footer class="footer" id="contact">
     <div class="container">
-      <div class="row">
+      <div class="row flex-col justify-center items-center gap-10 lg:flex-row lg:gap-0">
         <div class="footer-item" data-aos="fade-up">
           <h3>Our Location</h3>
           <p>SIH Building <br> Off Oron Road, Uyo</p>

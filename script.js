@@ -87,3 +87,29 @@ close.addEventListener("click", () => {
   modal.classList.add("hidden");
   modal.classList.remove("flex");
 });
+
+
+const navToggler = document.querySelector(".nav-toggler");
+console.log(navToggler);
+
+navToggler.addEventListener("click", toggleNav);
+
+
+function toggleNav(){
+    navToggler.classList.toggle("active");
+    if (navToggler.classList.contains("active")) {
+        navToggler.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+    } else {
+        navToggler.innerHTML = `<i class="fa-solid fa-bars"></i>`
+    }
+    // console.log(navToggler.classList);
+    document.querySelector(".bar-nav").classList.toggle("open");
+}
+
+
+// close nav when clicking on nav item
+document.addEventListener("click", function(e) {
+    if(e.target.closest(".nav-item")) {
+        toggleNav();
+    }
+});
