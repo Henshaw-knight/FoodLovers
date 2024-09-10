@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./recipe.css">
+    <script src="./recipe.js" defer></script>
+
+    <title>FoodLovers | Recipe page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <form action="" id="form">
+            <label for="">What food recipe do you want to search for? <br>
+                <input type="search" placeholder="Enter name of food" id="searched-item">
+            </label>
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <img src="./image-omelette.jpeg" alt="omelette">
+
+        <div id="result" class="">
+
+            <h1 id="heading"></h1>
+
+
+            <h2 class="heading">Ingredients</h2>
+            <ul id="ingredient-list">
+            </ul>
+
+
+            <hr>
+
+            <div>
+                <h2 class="heading" id>Instructions</h2>
+
+                <div id="instructions">
+                    
+                </div>
+            </div>
+
+
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <em><a href="#">Henshaw</a></em>.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

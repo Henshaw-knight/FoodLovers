@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'CustomFont1';
+    src: url('./fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFont2';
+    src: url('./fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    color: rgb(80, 79, 79);
+}
+
+body {
+    /* background-color: rgb(241, 213, 233); */
+    background-color: rgb(243, 229, 216);
+}
+
+h1, h2 {
+    font-family: 'CustomFont2', sans-serif;
+    font-weight: lighter;
+}
+
+h1 {
+    color: rgb(39, 38, 38);
+    margin-top: 20px;
+}
+
+h2 {
+    color: rgb(133, 53, 53);
+}
+
+img {
+    /* width: 610px; */
+    width: 100%;
+    border-radius: 10px;
+}
+
+div, p, li {
+    font-family: 'CustomFont1', sans-serif;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+li {
+    padding: 0 0 0 15px;
+    /* background-color: blue; */
+}
+
+li::marker {
+    color: rgb(117, 53, 53);
+    /* Color for the bullets */
+}
+
+ol li::marker {
+    font-weight: bold;
+}
+
+ul, ol {
+    /* background-color: yellow; */
+    /* margin: 0; */
+    padding: 0 20px;
+    /* color: rgb(133, 53, 53); */
+}
+
+ul {
+    list-style-type: square;
+    /* Change bullets to squares */
+}
+
+h3 {
+    color: rgb(128, 0, 75);
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+#container {
+    width: 50%;
+    /* width: 700px; */
+    background-color: white;
+    margin: 70px auto;
+    padding: 35px 30px;
+    border-radius: 20px;
+}
+
+#time {
+    background-color: rgb(255, 242, 251);
+    padding: 30px 30px 25px;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+    opacity: 0.7;
+}
+
+td {
+    border-bottom: 1px solid #ccc;
+    padding: 12px;
+    width: 300px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.nutrients {
+    padding-left: 25px;
+}
+
+.values {
+    color: rgb(133, 53, 53);
+    font-weight: bold;
+}
+
+.table-ending {
+    border: none;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form button {
+    cursor: pointer;
+    background-color: rgb(91, 177, 91);
+    padding: 10px 15px;
+    border: none;
+}
+
+form button i {
+    color: white;
+}
+
+input {
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px 20px;
+}
+
+#heading {
+    text-transform: capitalize;
+}
+
+#result {
+    display: none;
+}
+
+#result.active {
+    display: block;
+}
